@@ -20,34 +20,67 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container mt-5">
-      <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Enter City" />
-        <button class="btn btn-outline-primary" type="button" id="search">
-          Button
-        </button>
-      </div>
+    <div class="container mt-4">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="input-group mb-4 shadow-sm">
+            <input
+              type="text"
+              class="form-control rounded-start-pill py-2 px-3 border-end-0"
+              placeholder="Enter city name..."
+              aria-label="City input"
+            />
+            <button
+              class="btn btn-primary rounded-end-pill px-4 border-start-0"
+              type="button"
+              id="search"
+            >
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
 
-      <div class="card" style="width: 18rem">
-        <img
-          src="https://images.pexels.com/photos/688660/pexels-photo-688660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          class="card-img-top"
-        />
-        <div class="card-body">
-          <h2 class="card-title">Weather <sup>IN</sup></h2>
-          <p>Now</p>
-          <h5 class="temp">
-            29.71° <i class="fa-solid fa-temperature-high"></i>
-          </h5>
-          <p class="card-text feels-like">Feels Like 27.94°</p>
+          <div class="card border-0 shadow-lg overflow-hidden">
+            <img
+              src="https://images.pexels.com/photos/688660/pexels-photo-688660.jpeg"
+              class="card-img-top"
+              alt="Weather illustration"
+              style="height: 180px; object-fit: cover"
+            />
+            <div class="card-body pb-0 text-center">
+              <h3 class="card-title mb-1">
+                Weather <sup class="text-muted fs-6">IN</sup>
+              </h3>
+              <p class="text-muted mb-3">Currently</p>
+              <div
+                class="d-flex align-items-center justify-content-center mb-3"
+              >
+                <h2 class="display-4 fw-bold me-3 temp">
+                  30°C
+                  <i class="fas fa-temperature-arrow-up fs-1 text-danger"></i>
+                </h2>
+              </div>
+              <p class="text-muted mb-4 feels-like">Feels like 27°C</p>
+            </div>
+            <ul class="list-group list-group-flush border-top">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                <span class="text-capitalize description">Clear sky</span>
+                <i class="fas fa-sun text-warning"></i>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                <span>Humidity</span>
+                <span class="text-primary humidity">
+                  17% <i class="fas fa-tint ms-1"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item description">clear sky</li>
-          <li class="list-group-item humidity">Humidity: 17%</li>
-        </ul>
       </div>
     </div>
-
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script

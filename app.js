@@ -16,16 +16,17 @@ btn.addEventListener("click", async () => {
 
   let weatherReport = await getRes(coordinates.lat, coordinates.lon);
 
-  cardTitle.innerHTML = `Weather <sup>${weatherReport.country}</sup>`;
+  cardTitle.innerHTML = `Weather <sup class="text-muted fs-6">${weatherReport.country}</sup>`;
 
+  temp.innerText = weatherReport.temp;
   if (weatherReport.temp <= 10) {
-    temp.innerHTML = `${weatherReport.temp}° <i class="fa-solid fa-snowflake"></i>`;
+    temp.innerHTML = `${weatherReport.temp}°C <i class="fas fa-snowflake fs-1 text-primary"></i>`;
   } else if (weatherReport.temp > 10) {
-    temp.innerHTML = `${weatherReport.temp}° <i class="fa-solid fa-temperature-high"></i>`;
+    temp.innerHTML = `${weatherReport.temp}°C <i class="fas fa-temperature-arrow-up fs-1 text-danger"></i>`;
   }
-  feelsLike.innerText = `Feels Like ${weatherReport.feelsLike}°`;
-  description.innerText = weatherReport.weatherType;
-  humidity.innerText = `Humidity: ${weatherReport.humidity}%`;
+  feelsLike.innerText = `Feels Like ${weatherReport.feelsLike}°C`;
+  description.innerHTML = weatherReport.weatherType;
+  humidity.innerHTML = `${weatherReport.humidity}%<i class="fas fa-tint ms-1"></i>`;
 });
 
 async function getRes(lat, lon) {
