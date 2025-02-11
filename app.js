@@ -34,6 +34,7 @@ btn.addEventListener("click", async () => {
   temp.classList.remove("text-danger");
   description.classList.remove("text-danger", "fw-bold");
   humidityTitle.classList.remove("text-danger", "fw-bold");
+  humidityTitle.innerText = "Humidity";
 
   btn.innerHTML = `<i class="fas fa-spinner fa-spin"></i>`;
   try {
