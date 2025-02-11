@@ -49,31 +49,31 @@ btn.addEventListener("click", async () => {
       temp.innerHTML = `${weatherReport.temp}°C <i class="fas fa-snowflake fs-1 text-primary"></i>`;
       cardImg.setAttribute(
         "src",
-        "https://images.unsplash.com/photo-1610816424833-0b040fe810a0?q=80&w=1351&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "src/Default_Crisp_winter_landscapes_with_sparkling_snow_and_delica_1_417903bb-dae6-4328-9c5d-0f5a0869fb7b_0.jpg"
       );
     } else if (weatherReport.temp >= 5 && weatherReport.temp < 15) {
       temp.innerHTML = `${weatherReport.temp}°C <i class="fas fa-cloud fs-1 text-primary"></i>`;
       cardImg.setAttribute(
         "src",
-        "https://images.unsplash.com/photo-1578147063111-9ffec96050cd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "src/Default_Misty_mornings_and_gentle_overcast_skies_create_a_calm_1_98164814-246b-417b-91c8-908f88e3f3e6_0.jpg"
       );
     } else if (weatherReport.temp >= 15 && weatherReport.temp < 25) {
       temp.innerHTML = `${weatherReport.temp}°C <i class="fas fa-cloud-sun fs-1 text-warning"></i>`;
       cardImg.setAttribute(
         "src",
-        "https://images.unsplash.com/photo-1592722212832-f7219ea510da?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "src/Default_Lush_greenery_and_blooming_flowers_under_soft_natural_0_926d0685-abe7-4b64-9d02-84807eafd807_0.jpg"
       );
     } else if (weatherReport.temp >= 25 && weatherReport.temp < 35) {
       temp.innerHTML = `${weatherReport.temp}°C <i class="fas fa-sun fs-1 text-warning"></i>`;
       cardImg.setAttribute(
         "src",
-        "https://images.unsplash.com/photo-1471922694854-ff1b63b20054?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "src/Default_Sunlit_scenes_bursting_with_vibrant_colors_and_lively_1_55a9d23d-330d-40bb-be4a-b20a56381bd3_0.jpg"
       );
     } else if (weatherReport.temp >= 35) {
       temp.innerHTML = `${weatherReport.temp}°C <i class="fas fa-fire fs-1 text-danger"></i>`;
       cardImg.setAttribute(
         "src",
-        "https://images.unsplash.com/photo-1637179709448-e03199d05f6e?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "src/Default_Dramatic_sunscorched_vistas_with_shimmering_heat_waves_2_defa25d1-2e90-4d1d-a54d-b94c2f359706_0.jpg"
       );
     }
 
