@@ -36,7 +36,7 @@ btn.addEventListener("click", async () => {
   humidityTitle.classList.remove("text-danger", "fw-bold");
   humidityTitle.innerText = "Humidity";
 
-  btn.innerHTML = `<i class="fas fa-spinner fa-spin"></i>`;
+  btn.innerHTML = `<i class="fa-solid fa-circle-notch fa-spin"></i>`;
   try {
     let weatherReport = await getRes(coordinates.lat, coordinates.lon);
     console.log(weatherReport);
